@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Parking Lot Hello world!");
+        System.out.println("ParkingLot Hello world!");
 
         Vehicle vehicle = new Vehicle("TS09AB1234", VehicleType.CAR);
         EntryGate gate = new EntryGate();

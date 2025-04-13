@@ -18,14 +18,15 @@ Can be easily extended (new appenders, new formats)
 
 
 🧱 High-Level Design
+
 Key Components:
-Component	Description
-Logger	Public interface used by clients to log messages
-LogManager	Singleton managing logger instances
-LogMessage	POJO for log entry (message, level, timestamp)
-Appender (Interface)	ConsoleAppender, FileAppender, etc.
-AsyncDispatcher	Background thread that pulls log messages and dispatches them to appenders
-LogLevel	Enum for log levels (DEBUG, INFO, etc.)
+Component	                         Description
+Logger	                             Public interface used by clients to log messages
+LogManager	                         ingleton managing logger instances
+LogMessage	                         POJO for log entry (message, level, timestamp)
+Appender (Interface)	             ConsoleAppender, FileAppender, etc.
+AsyncDispatcher	                     Background thread that pulls log messages and dispatches them to appenders
+LogLevel	                         Enum for log levels (DEBUG, INFO, etc.)
 
 
 

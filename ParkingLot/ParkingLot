@@ -15,6 +15,7 @@ Fee calculation (optional for base design)
 
 🧱 Core Components
 1. Entities
+
 Vehicle
 
 ParkingSpot
@@ -31,6 +32,7 @@ Payment (optional)
 
 
 🔄 Workflow
+
 Vehicle arrives at EntryGate
 
 System allocates a parking spot
@@ -92,6 +94,7 @@ On exit, spot is freed and payment is made (if required)
 
 
 🧠 What You Can Add Later
+
      Payment Service
 
      Ticket expiration and fee calc

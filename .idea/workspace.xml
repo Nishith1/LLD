@@ -4,194 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b91cd6e-975a-4960-9b22-06027d9b6768" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AmazonCartSystem/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AmazonCartSystem/AmazonCartSystem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AmazonCartSystem/AmazonCartSystem.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AmazonCartSystem/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AmazonCartSystem/src/entities/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AmazonCartSystem/src/entities/CartItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AmazonCartSystem/src/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AmazonCartSystem/src/service/CartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMyShow/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMyShow/BookMyShow" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMyShow/BookMyShow.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMyShow/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMyShow/src/entity/Booking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMyShow/src/entity/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMyShow/src/entity/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMyShow/src/entity/Screen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMyShow/src/entity/Seat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMyShow/src/entity/Show.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMyShow/src/entity/Theatre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMyShow/src/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMyShow/src/entity/enums/BookingStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMyShow/src/entity/enums/Genre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMyShow/src/entity/enums/PaymentMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMyShow/src/entity/enums/PaymentStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMyShow/src/entity/enums/Price.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMyShow/src/entity/enums/SeatStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMyShow/src/entity/enums/SeatType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookMyShow/src/manager/SeatLockManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CabBookingSystem/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CabBookingSystem/CabBookingSystem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CabBookingSystem/CabBookingSystem.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CabBookingSystem/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CabBookingSystem/src/entity/Cab.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CabBookingSystem/src/entity/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CabBookingSystem/src/entity/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CabBookingSystem/src/entity/Ride.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CabBookingSystem/src/entity/RideStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CabBookingSystem/src/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CabBookingSystem/src/operation/Dispatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CabBookingSystem/src/service/RideService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElevatorSystem/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElevatorSystem/ElevatorSystem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElevatorSystem/ElevatorSystem.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElevatorSystem/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElevatorSystem/src/entities/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElevatorSystem/src/entities/Elevator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElevatorSystem/src/entities/ElevatorStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElevatorSystem/src/request/ExternalRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElevatorSystem/src/request/InternalRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElevatorSystem/src/scheduler/Scheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ElevatorSystem/src/system/ElevatorSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileStorageSystem/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileStorageSystem/FileStorageSystem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileStorageSystem/FileStorageSystem.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileStorageSystem/src/FileEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileStorageSystem/src/FileSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileStorageSystem/src/Folder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileStorageSystem/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileStorageSystem/src/Permission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileStorageSystem/src/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryManagementSystem/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryManagementSystem/InventoryManagementSystem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryManagementSystem/InventoryManagementSystem.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryManagementSystem/src/InventoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryManagementSystem/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryManagementSystem/src/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InventoryManagementSystem/src/Stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LLD.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LRUCache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LRUCache/LRUCache.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LRUCache/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoggerSystem/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoggerSystem/LoggerSystem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoggerSystem/LoggerSystem.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoggerSystem/src/Dispatcher/AsyncDispatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoggerSystem/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoggerSystem/src/appender/Appender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoggerSystem/src/appender/impl/ConsoleAppender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoggerSystem/src/entities/LogMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoggerSystem/src/entities/enums/LogLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoggerSystem/src/logger/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MessageQueueOrEventBus/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MessageQueueOrEventBus/Desc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MessageQueueOrEventBus/MessageQueueOrEventBus.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MessageQueueOrEventBus/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MessageQueueOrEventBus/src/mq/MessageQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MessageQueueOrEventBus/src/mq/Subscriber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MessageQueueOrEventBus/src/usage/PrintSubscriber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerChess/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerChess/MultiplayerChess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerChess/MultiplayerChess.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerChess/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerChess/src/entities/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerChess/src/entities/Cell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerChess/src/entities/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerChess/src/entities/Move.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerChess/src/entities/Piece.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerChess/src/entities/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerChess/src/entities/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerChess/src/entities/Rook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerChess/src/entities/enums/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiplayerChess/src/entities/enums/GameStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationSystem/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationSystem/NotificationSystem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationSystem/NotificationSystem.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationSystem/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationSystem/src/entities/Channel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationSystem/src/entities/EmailChannel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationSystem/src/entities/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationSystem/src/entities/PushChannel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationSystem/src/entities/SMSChannel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationSystem/src/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationSystem/src/entities/enums/NotificationPriority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationSystem/src/entities/enums/NotificationStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationSystem/src/service/Dispatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationSystem/src/service/NotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotificationSystem/src/service/RetryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParkingLot/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParkingLot/Parking Lot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParkingLot/ParkingLot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParkingLot/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParkingLot/src/entities/EntryGate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParkingLot/src/entities/ParkingLot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParkingLot/src/entities/ParkingSpot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParkingLot/src/entities/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParkingLot/src/entities/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParkingLot/src/enums/SpotType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParkingLot/src/enums/TicketStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParkingLot/src/enums/VehicleType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RateLimiter/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RateLimiter/FixedWindow" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RateLimiter/RateLimiter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RateLimiter/SlidingWindowCounter" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RateLimiter/SlidingWindowLog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RateLimiter/TokenBucket" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RateLimiter/src/FixedWindowRateLimiter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RateLimiter/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RateLimiter/src/SlidingWindowCounterRateLimiter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RateLimiter/src/SlidingWindowLogRateLimiter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RateLimiter/src/TokenBucketRateLimiter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RedisInMemKeyValStore/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RedisInMemKeyValStore/In-Memory Key-Value-Store-like-Redis" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RedisInMemKeyValStore/RedisInMemKeyValStore.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RedisInMemKeyValStore/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RedisInMemKeyValStore/src/datastructure/ValueWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RedisInMemKeyValStore/src/store/InMemoryKeyValueStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SearchAutocompleteSystem/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SearchAutocompleteSystem/SearchAutoCompleteSystem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SearchAutocompleteSystem/SearchAutocompleteSystem.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SearchAutocompleteSystem/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SearchAutocompleteSystem/src/main/java/AutocompleteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SearchAutocompleteSystem/src/main/java/AutocompleteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SearchAutocompleteSystem/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SearchAutocompleteSystem/src/main/java/TrieNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SearchAutocompleteSystem/target/SearchAutocompleteSystem-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SearchAutocompleteSystem/target/classes/AutocompleteController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SearchAutocompleteSystem/target/classes/AutocompleteService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SearchAutocompleteSystem/target/classes/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SearchAutocompleteSystem/target/classes/TrieNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SearchAutocompleteSystem/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SearchAutocompleteSystem/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SearchAutocompleteSystem/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SplitWise/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SplitWise/SplitWise" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SplitWise/SplitWise.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SplitWise/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SplitWise/src/entities/EqualExpense.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SplitWise/src/entities/Expense.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SplitWise/src/entities/ExpenseType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SplitWise/src/entities/Split.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SplitWise/src/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SplitWise/src/manager/ExpenseManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ThreadPoolExecuter/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ThreadPoolExecuter/ThreadPoolExecuter" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ThreadPoolExecuter/ThreadPoolExecuter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ThreadPoolExecuter/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ThreadPoolExecuter/src/ThreadPoolExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="3b91cd6e-975a-4960-9b22-06027d9b6768" name="Changes" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/LoggerSystem/LoggerSystem" beforeDir="false" afterPath="$PROJECT_DIR$/LoggerSystem/LoggerSystem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkingLot/Parking Lot" beforeDir="false" afterPath="$PROJECT_DIR$/ParkingLot/ParkingLot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkingLot/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ParkingLot/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,6 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2vawTSLW6wPeCQTx2g67TB4xuys" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -218,19 +37,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-20",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-20&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jobs4\OneDrive\Desktop\LLD\SplitWise\src" />
@@ -242,7 +61,7 @@
       <command value="mvn clean install -U" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.Main (5)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="InventoryManagementSystem" />
@@ -264,27 +83,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="RedisInMemKeyValStore" />
+      <module name="LLD" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="FileStorageSystem" />
+      <module name="SearchAutocompleteSystem" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (5)" />
+        <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (5)" />
       </list>
     </recent_temporary>
   </component>
@@ -297,6 +116,21 @@
       <option name="presentableId" value="Default" />
       <updated>1744396502926</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1744563830860</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744563830860</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first commit">
+      <created>1744563866221</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744563866221</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -312,5 +146,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>
