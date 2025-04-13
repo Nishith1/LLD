@@ -1,0 +1,92 @@
+✅ Problem Statement
+
+Design a simplified version of a File Storage System (like Google Drive or Dropbox) that supports:
+
+Creating files and folders
+
+Uploading and downloading files
+
+Searching files/folders by name
+
+Sharing files with users
+
+Managing access (read/write)
+
+File versioning (optional, advanced)
+
+Directory hierarchy navigation (optional)
+
+
+
+
+📦 Key Functional Requirements
+Feature	Details
+Create file/folder	Hierarchical structure (like UNIX)
+Upload/download	Store and retrieve file content
+Share files	Add user permissions
+Access control	Read/write access by users
+Search	By file or folder name
+Optional: Versioning	Keep versions of files when updated
+
+
+
+🧱 Class Design Overview
+Here’s a basic class structure:
+
+
++-------------------+
+|     FileSystem    |
++-------------------+
+| Map<String, User> |
+| Folder root       |
++-------------------+
+
++--------+       +-------------+       +--------+
+|  User  |<----->|  Permission |<----->|  File  |
++--------+       +-------------+       +--------+
+
++--------+
+| Folder |
++--------+
+| List<File>   |
+| List<Folder> |
++--------------+
+
+
+
+
+🔍 Features to Extend
+Feature	How to Extend
+Search	Use a Trie or Index by file name
+Versioning	Add a List<String> for version history
+Concurrency	Use ReentrantReadWriteLock
+Storage Limits	Track file size and enforce limits
+Public Link Sharing	Generate tokens or UUID-based links
+Metadata	Add created/modified time, owner info
+
+
+
+
+🧠 Interview Discussion Points
+
+How would you scale this for millions of users? (Sharding / S3-like storage / CDN)
+
+How would you persist file content? (DB + blob store)
+
+What if 2 users edit the same file concurrently? (Locking or conflict resolution)
+
+How to optimize search? (Indexing, full-text search, Lucene)
+
+Security: Token-based access control / audit logs
+
+
+Next:
+
+Extend this with versioning?
+
+Add file upload limits or chunked uploads?
+
+Design the distributed version like Dropbox?
+
+
+

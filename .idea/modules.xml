@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AmazonCartSystem/AmazonCartSystem.iml" filepath="$PROJECT_DIR$/AmazonCartSystem/AmazonCartSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BookMyShow/BookMyShow.iml" filepath="$PROJECT_DIR$/BookMyShow/BookMyShow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CabBookingSystem/CabBookingSystem.iml" filepath="$PROJECT_DIR$/CabBookingSystem/CabBookingSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ElevatorSystem/ElevatorSystem.iml" filepath="$PROJECT_DIR$/ElevatorSystem/ElevatorSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FileStorageSystem/FileStorageSystem.iml" filepath="$PROJECT_DIR$/FileStorageSystem/FileStorageSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InventoryManagementSystem/InventoryManagementSystem.iml" filepath="$PROJECT_DIR$/InventoryManagementSystem/InventoryManagementSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LLD.iml" filepath="$PROJECT_DIR$/LLD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LRUCache/LRUCache.iml" filepath="$PROJECT_DIR$/LRUCache/LRUCache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LoggerSystem/LoggerSystem.iml" filepath="$PROJECT_DIR$/LoggerSystem/LoggerSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MessageQueueOrEventBus/MessageQueueOrEventBus.iml" filepath="$PROJECT_DIR$/MessageQueueOrEventBus/MessageQueueOrEventBus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultiplayerChess/MultiplayerChess.iml" filepath="$PROJECT_DIR$/MultiplayerChess/MultiplayerChess.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NotificationSystem/NotificationSystem.iml" filepath="$PROJECT_DIR$/NotificationSystem/NotificationSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ParkingLot/ParkingLot.iml" filepath="$PROJECT_DIR$/ParkingLot/ParkingLot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RateLimiter/RateLimiter.iml" filepath="$PROJECT_DIR$/RateLimiter/RateLimiter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RedisInMemKeyValStore/RedisInMemKeyValStore.iml" filepath="$PROJECT_DIR$/RedisInMemKeyValStore/RedisInMemKeyValStore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SearchAutocompleteSystem/SearchAutocompleteSystem.iml" filepath="$PROJECT_DIR$/SearchAutocompleteSystem/SearchAutocompleteSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SplitWise/SplitWise.iml" filepath="$PROJECT_DIR$/SplitWise/SplitWise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThreadPoolExecuter/ThreadPoolExecuter.iml" filepath="$PROJECT_DIR$/ThreadPoolExecuter/ThreadPoolExecuter.iml" />
+    </modules>
+  </component>
+</project>

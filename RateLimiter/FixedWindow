@@ -1,0 +1,55 @@
+Design a Rate Limiter
+🧠 Problem Statement:
+Design a system that limits the number of requests a user/client can make in a given time window — for example, only allow 100 requests per user per 60 seconds.
+
+✅ Clarifying Questions to Ask (important for interviews):
+Should it be per user, per IP, or globally?
+
+What type of rate limiting is expected?
+
+Fixed window
+
+Sliding window
+
+Token bucket
+
+Leaky bucket
+
+Should it work in distributed systems or a single process?
+
+Do we need burst handling?
+
+
+1. What is Fixed Window Rate Limiting?
+You allow at most N requests per time window (e.g. 100 requests per 60 seconds).
+
+All requests falling into the same time window are counted.
+
+If the number exceeds the threshold, reject the request.
+
+🧠 Example:
+For user U123, allow only 5 requests per 10 seconds.
+If 6 requests are made between 10:00:00 and 10:00:10 — the 6th is rejected.
+
+
+✅ 2. Key Components
+Map<UserId, Counter> – to track request counts
+
+Counter holds:
+
+timestamp: start time of the window
+
+count: how many requests made in this window
+
+✅ When is this Approach Good?
+Simple to implement
+
+Low overhead
+
+Great for non-distributed, per-user scenarios
+
+
+
+
+
+

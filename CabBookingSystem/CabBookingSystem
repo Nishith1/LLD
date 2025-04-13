@@ -1,0 +1,77 @@
+🚖 Problem Statement
+Design a Cab Booking System where users can:
+
+Register and log in
+
+Search nearby available cabs
+
+Book a cab
+
+Track ongoing ride
+
+Cancel a ride
+
+Drivers can:
+
+Go online/offline
+
+Accept ride requests
+
+Complete rides
+
+The system should:
+
+Efficiently match users with nearby cabs
+
+Track real-time cab locations
+
+Be scalable and fault-tolerant
+
+
+🔧 Key Entities
+User
+
+Driver
+
+Cab
+
+Ride
+
+Location
+
+BookingManager / Dispatcher
+
+MatchingAlgorithm
+
+
+
+🧱 Class Design Overview
+scss
+Copy
+Edit
+CabBookingSystem
+├── User
+├── Driver
+│   └── Cab
+├── Ride
+├── Dispatcher (Matching logic)
+├── LocationService (distance calc)
+└── RideService (Booking, Cancelling, Completing)
+
+
+✅ Extensions (for HLD discussion)
+Geospatial indexing using Quad Trees or Redis Geo
+
+Surge pricing strategy
+
+ETA prediction algorithms
+
+Real-time tracking with WebSockets
+
+Payment service integration
+
+Ratings & reviews
+
+Notifications (push/SMS/email)
+
+

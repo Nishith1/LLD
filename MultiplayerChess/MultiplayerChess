@@ -1,0 +1,50 @@
+Designing a Multiplayer Chess Game (LLD) is a classic system design problem that tests your understanding of:
+
+Object-Oriented Design (OOP)
+
+Real-time communication (e.g., WebSocket)
+
+Game state management
+
+Turn-based systems
+
+Handling edge cases like undo, draw, checkmate, resign, etc.
+
+
+
+✅ 1. Core Requirements
+Functional:
+Two players can play a chess game.
+
+Enforce chess rules (valid moves, check, checkmate).
+
+Maintain the state of the game.
+
+Track history of moves (for undo, draw, replay).
+
+Support resign, draw, rematch.
+
+Non-functional (if needed):
+Real-time updates.
+
+Scalable to multiple games simultaneously.
+
+Secure and cheat-resistant.
+
+
+
+
+Optional Enhancements (for Real-World System)
+Add GameManager class to manage all active games.
+
+Use WebSocket or pub-sub (Kafka) for real-time events.
+
+Support AI-based bots.
+
+Add timer per player.
+
+Store game history in a database.
+
+Implement full move validation (e.g., check, checkmate, en passant, castling).
+
+Rate limiting per player to avoid spam moves.

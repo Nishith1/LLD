@@ -1,0 +1,83 @@
+✅ Problem Statement
+
+Design an Inventory Management System that:
+
+Tracks stock levels of products
+
+Supports adding, updating, and removing inventory
+
+Handles product reservations (e.g., during checkout)
+
+Manages multiple warehouses (optional for scale)
+
+Ensures consistent stock levels across operations
+
+Supports low-stock alerts or thresholds
+
+
+
+
+📦 Key Functional Requirements
+Feature	Description
+Add Product	Add a new product to inventory
+Update Stock	Increase/decrease stock levels
+Reserve Stock	Reserve stock for an order (during checkout)
+Release Stock	Release reservation on cancel/timeout
+Remove Product	Remove a product from inventory
+Check Stock	Query current stock count
+Alerts	Notify when below threshold (optional)
+
+
+
+🧱 Class Design Overview
+
++---------------------+
+|   InventoryService  |
++---------------------+
+| Map<Product, Stock> |
++---------------------+
+
++----------+     +-------+
+| Product  |<--->| Stock |
++----------+     +-------+
+
++-------------+
+| Reservation |
++-------------+
+
+
+
+
+🔍 Optional Features to Extend
+Feature	How to Add
+Multi-Warehouse	Use Map<Warehouse, Map<Product, Stock>>
+Alerts	Add threshold per product & notify
+Concurrency Control	Use locks or synchronized methods
+DB Persistence	Store product, stock, reservations in DB
+Event-based System	Emit events on low stock/reservation
+Inventory Expiry	Add TTL for perishable items
+
+
+🧠 Interview Discussion Points
+
+How to scale to handle millions of SKUs? (Sharding, partitions)
+
+How to sync across warehouses? (Event-driven updates, Kafka, etc.)
+
+How to avoid overselling in distributed setup? (DB locks, distributed transactions)
+
+What if two orders reserve the same stock simultaneously?
+
+How to ensure atomicity of reservation & order confirmation?
+
+
+Next:
+
+Order management integration?
+
+Event-based alerts?
+
+MongoDB/Redis-backed persistence?
+
+
+

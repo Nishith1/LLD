@@ -1,0 +1,96 @@
+✅ Why It's Asked
+This question tests:
+
+Object-Oriented Design
+
+Relationship modeling
+
+Edge case handling
+
+Data consistency
+
+Optional: how you'd scale this system
+
+
+🧾 Problem Statement
+Design a system like Splitwise, where:
+
+Users can create groups
+
+Add expenses (equal or unequal splits)
+
+Track how much each user owes or is owed
+
+Simplify debts (e.g., via graph-style settlement)
+
+
+🧱 Core Concepts
+🔹 Entities:
+User
+
+Group
+
+Expense
+
+Split
+
+ExpenseManager / BalanceSheet
+
+
+🔸 Key Functionalities:
+Add user
+
+Create a group
+
+Add an expense (equal/unequal split)
+
+Show balances
+
+Simplify debts (optional)
+
+
+🧩 Class Design Overview
+diff
+Copy
+Edit
+User
+- id
+- name
+- email
+
+Group
+- id
+- name
+- members: List<User>
+
+Expense
+- id
+- amount
+- paidBy: User
+- splits: List<Split>
+- expenseType: EQUAL / EXACT / PERCENT
+
+Split
+- user
+- amount
+
+ExpenseManager
+- Map<User, Map<User, Double>> balanceSheet
+- Methods to addExpense, showBalance
+
+
+📈 Advanced Extensions (if asked):
+Add groups (and track expenses per group)
+
+Add support for percentage-based splits
+
+Optimize debt settlements using a graph (minimize # of transactions)
+
+Add currency handling
+
+Build REST API version with Spring Boot
+
+
+
+
+

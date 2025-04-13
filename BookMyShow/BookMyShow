@@ -1,0 +1,70 @@
+🎯 Problem Statement
+Design the core backend components of a system like BookMyShow that allows users to:
+
+Search movies in nearby theatres
+
+View show timings
+
+Book/cancel tickets
+
+Get seat availability in real time
+
+Make payments
+
+
+✅ 1. Functional Requirements
+Users can search for movies by name/location/language
+
+Users can view show details and available seats
+
+Users can book tickets (must be real-time and avoid overbooking)
+
+Users can cancel bookings
+
+System should support multiple cities, theatres, movies, screens, and shows
+
+
+
+❌ 2. Non-Functional Requirements
+High availability & low latency
+
+Handle concurrent bookings for same seat (locking needed)
+
+Eventual consistency is okay (except for seat booking)
+
+
+🧾 Booking Flow (Steps)
+Search for Movie → Select Show
+
+Choose Seats → Lock the Seats
+
+Complete Payment
+
+Confirm Booking (Mark seats as BOOKED, release others)
+
+
+
+⚙️ 5. Sequence Diagram Overview
+
+User → BookingService: requestBooking(showId, seatList)
+BookingService → SeatLockManager: lock(seats)
+if lock success:
+    → PaymentService: initiatePayment()
+    if payment successful:
+        → Mark seats BOOKED
+    else:
+        → unlock(seats)
+
+
+⚒️ 6. Scalability & Extension Ideas
+Use Redis for distributed locks
+
+Use Kafka for asynchronous notifications/ticket confirmation
+
+Add caching layer (for movies, theatre info)
+
+Add batch jobs to expire unpaid bookings after timeout
+
+
+
+

@@ -1,0 +1,97 @@
+🎯 Problem Statement
+Design a Notification System that can send notifications to users via multiple channels such as:
+
+📧 Email
+
+📱 SMS
+
+📲 Push notifications
+
+🔔 In-app notifications
+
+The system should support:
+
+Sending notifications to individual users or in bulk
+
+Scheduled or real-time delivery
+
+Retry on failure
+
+Priority-based handling
+
+
+
+
+✅ 1. Functional Requirements
+Support multiple channels (email, SMS, push, in-app)
+
+Allow priority-based and scheduled notifications
+
+Retry on failure (with exponential backoff)
+
+Idempotency to avoid duplicate sends
+
+Track delivery status (SENT, FAILED, RETRYING, DELIVERED)
+
+
+
+❌ 2. Non-Functional Requirements
+Scalable & asynchronous
+
+Highly available
+
+Decoupled from core services
+
+Easily extendable to new channels
+
+Low latency for real-time events (like login alert)
+
+
+
+
+🧪 6. Sequence Diagram (Simplified)
+
+Client → NotificationService: sendNotification()
+NotificationService → Queue: enqueue(notification)
+Dispatcher → Queue: poll()
+Dispatcher → Channel(s): send(notification, user)
+Channel → 3rd Party (Email/SMS API)
+← Dispatcher ← RetryService (if failed)
+
+
+
+🚀 7. Extensions and Scaling Ideas
+Kafka for event queue (instead of in-memory queue)
+
+MongoDB/Redis for storing notification status and retries
+
+Use templates for dynamic message generation
+
+Add rate limiting per user/channel
+
+Use async thread pool or reactive streams (Project Reactor)
+
+Enable user preferences (e.g., disable SMS)
+
+
+
+📌 Summary of Design
+Follows Strategy Pattern for Channels
+
+Retry mechanism with backoff
+
+Easily extendable & asynchronous
+
+Open for real-world integration (SendGrid, Twilio, Firebase)
+
+
+📌 Summary
+This system:
+
+Sends notifications through multiple channels
+
+Uses the Strategy Pattern to support pluggable channels
+
+Retries failures with exponential backoff
+
+Can be extended with Kafka, DB, and microservices easily

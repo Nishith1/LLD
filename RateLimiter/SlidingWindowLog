@@ -1,0 +1,41 @@
+🚪 Problem: Fixed window allows burst traffic at boundaries
+Imagine:
+
+You allow 10 requests per 60 seconds.
+
+A user sends 10 requests at 10:00:59 and then 10 more at 10:01:00 — they’ve done 20 in 1 second!
+
+📉 This is where Sliding Window Log shines.
+
+
+✅ Sliding Window Log – Core Idea
+Instead of grouping requests in fixed windows, log each request timestamp and:
+
+Allow a request only if the number of requests in the last X seconds is below threshold.
+
+🧠 Data Structure
+For each user, store a queue of timestamps.
+
+Map<String, Deque<Long>> userRequestLog;
+
+
+When a new request comes in:
+
+Remove timestamps older than (now - windowSize)
+
+If queue size < limit → allow and append timestamp
+
+Else → block the request
+
+
+🚀 Benefits of Sliding Window Log
+Prevents sudden traffic bursts
+
+Finer-grained control
+
+Easy to understand
+
+Interview-friendly
+
+
+

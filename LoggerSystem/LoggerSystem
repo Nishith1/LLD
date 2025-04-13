@@ -1,0 +1,97 @@
+✅ Requirements
+
+Build a Logger System that:
+
+Supports multiple log levels: DEBUG, INFO, WARN, ERROR
+
+Can write logs to multiple appenders: Console, File, DB, etc.
+
+Is thread-safe
+
+Supports asynchronous logging (non-blocking)
+
+Can filter logs based on configured log level
+
+Can be easily extended (new appenders, new formats)
+
+
+
+
+🧱 High-Level Design
+Key Components:
+Component	Description
+Logger	Public interface used by clients to log messages
+LogManager	Singleton managing logger instances
+LogMessage	POJO for log entry (message, level, timestamp)
+Appender (Interface)	ConsoleAppender, FileAppender, etc.
+AsyncDispatcher	Background thread that pulls log messages and dispatches them to appenders
+LogLevel	Enum for log levels (DEBUG, INFO, etc.)
+
+
+
+
+🧩 Class Diagram (Conceptual)
+
++--------------------+
+|      Logger        |
++--------------------+
+| - level: LogLevel  |
+| - appenders        |
+| - dispatcher       |
++--------------------+
+| +log(level, msg)   |
+| +debug/info/warn...|
++--------------------+
+
++--------------------+           +------------------+
+|   AsyncDispatcher  |<--------->|   BlockingQueue  |
++--------------------+           +------------------+
+
++--------------------+  implements  +------------------+
+|    Appender        |<-------------| ConsoleAppender  |
++--------------------+              | FileAppender     |
+                                    | DBAppender       |
+                                    +------------------+
+
+
+
+
+🧠 Core Concepts Used
+Thread-safe logging using a blocking queue.
+
+Async log dispatching to avoid blocking the main thread.
+
+Open/Closed Principle — Add new appenders without modifying core logic.
+
+Strategy Pattern — Appenders handle different output strategies.
+
+
+
+
+✨ Extensions (for follow-up questions)
+
+Add file appender with BufferedWriter
+
+Add log rotation
+
+Add log format customization
+
+Add batching and retry for DB writes
+
+Add log configuration loader (XML, JSON, or YAML-based)
+
+
+
+Next:
+
+A file-based appender implementation?
+
+A multi-threaded stress test setup?
+
+The HLD + LLD diagrams as an export?
+
+
+
+
+
+

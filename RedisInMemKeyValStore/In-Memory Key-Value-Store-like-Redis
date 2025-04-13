@@ -1,0 +1,58 @@
+✅ Problem Statement
+
+Design a simplified in-memory key-value store (like Redis) that:
+
+Supports basic put(key, value) and get(key)
+
+Optional TTL (time-to-live) for entries
+
+Thread-safe (multiple threads can read/write safely)
+
+Eviction policy like LRU when memory is full (optional)
+
+O(1) get and put operations
+
+Extensible to support more data types later
+
+
+
+🧩 Key Concepts to Include
+Feature	Detail
+Thread Safety	Using locks or concurrent data structures
+TTL Support	Background thread to expire old keys
+Eviction (LRU)	Optional but shows depth
+Time Complexity	O(1) for get and put
+Extensibility	Use generics or abstraction to support multiple value types
+
+
+
+🚀 Extensions (for deeper discussion)
+Feature	Approach
+LRU Cache	Combine LinkedHashMap or use LinkedHashSet + HashMap
+Multiple Data Types	Use wrapper for String, List, Set, etc.
+Persistence	Append-only file log (AOF) or snapshot
+Sharding/Cluster	Hash key to different node
+Pub/Sub	Add listeners on channels
+Transactions	Queue commands and execute atomically
+
+
+
+✅ Summary
+We’ve now designed a Redis-like In-Memory Key-Value Store with:
+
+Thread-safe get/put
+
+TTL support and background expiry
+
+Easily extendable core
+
+Option to build in LRU eviction, persistence, pub-sub, etc.
+
+
+Next:
+
+Add LRU eviction next?
+
+Extend to support multiple data types like Redis?
+
+Draw a class diagram?

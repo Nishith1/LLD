@@ -1,0 +1,69 @@
+🏢 Problem Statement
+Design an elevator system for a building with multiple elevators. Each elevator should handle requests efficiently. Users can:
+
+Call an elevator from any floor (up/down buttons)
+
+Choose a floor inside the elevator
+
+The system should:
+
+Track elevator movements
+
+Schedule requests
+
+Handle concurrent requests
+
+Be easily extendable to handle multiple elevators
+
+
+🎯 Key Concepts
+Functional Requirements
+Elevator request handling (internal/external)
+
+Elevator movement simulation
+
+Direction tracking (UP, DOWN, IDLE)
+
+Request queue
+
+Multiple elevators
+
+Non-Functional Requirements
+Thread-safe (if simulating concurrency)
+
+Scalable to N elevators
+
+Optimized request scheduling (optional: nearest elevator, same direction)
+
+
+🧱 Class Design Overview
+text
+Copy
+Edit
+ElevatorSystem
+├── List<Elevator>
+├── Scheduler
+│   └── Strategy Pattern (Optional: NearestElevatorScheduler)
+├── Request (FloorRequest, InternalRequest)
+└── Controller
+
+
+🧠 Enhancements
+Prioritize elevators moving in the same direction
+
+Optimize stop merging
+
+Real concurrency (threads)
+
+Emergency halt / weight limit sensors
+
+REST APIs / Microservices design
+
+
+🎯 Real test cases?
+
+🔀 Thread-safe elevator with real concurrency?
+
+🧱 HLD + LLD combined with DB + APIs?
+
+

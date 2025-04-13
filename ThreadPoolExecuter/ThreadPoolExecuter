@@ -1,0 +1,54 @@
+✅ Use Case / Requirements
+Design a Thread Pool Executor that:
+
+Accepts tasks (Runnables or Callables).
+
+Has a configurable number of threads.
+
+Queues incoming tasks if all threads are busy.
+
+Allows graceful shutdown.
+
+Can support blocking and non-blocking task submission.
+
+
+
+
+🧱 Core Components
+Component	Responsibility
+ThreadPoolExecutor	Main class managing workers and task queue
+Worker (Runnable)	Executes submitted tasks
+TaskQueue	Queue for holding tasks
+shutdown()	Stops accepting new tasks and finishes ongoing ones
+
+
+
+🧠 Concepts Covered
+Thread lifecycle
+
+Blocking queues
+
+Graceful shutdown
+
+Interrupt handling
+
+Custom executor design
+
+
+Extensions:
+
+Callable<T> support and Future<T>?
+
+Scaling worker threads (dynamic pool)?
+
+Scheduled executor (for delayed/periodic tasks)?
+
+Monitoring metrics (active threads, task count)?
+
+
+
+
+
+
+
+

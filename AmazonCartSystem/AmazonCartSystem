@@ -1,0 +1,31 @@
+✅ Requirements
+Functional:
+A user can add/remove/update items in the cart.
+
+A user can view the current state of their cart.
+
+Each cart is associated with one user.
+
+Support quantity updates for existing items.
+
+Persist cart items temporarily (guest) and permanently (logged-in users).
+
+
+Non-Functional:
+Should be highly available and responsive.
+
+Should support millions of users in parallel.
+
+Sync with inventory system for item availability.
+
+
+
+Further extensions:
+
+Extend this with promo codes & discounts?
+
+Add concurrency control for real-time updates?
+
+Build a REST API or Kafka-based version?
+
+

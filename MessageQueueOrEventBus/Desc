@@ -1,0 +1,44 @@
+--Interview Prompt
+
+Design a Message Queue (Event Bus) system like Kafka or RabbitMQ (simplified version).
+
+Your system should support:
+
+publish(topic, message)
+
+subscribe(topic, subscriber)
+
+Deliver messages to all subscribers in the order they are published.
+
+--High-Level Requirements
+
+-Functional:
+Topic-based pub/sub model.
+
+Multiple subscribers per topic.
+
+FIFO delivery per topic.
+
+Subscribers receive all new messages after they subscribe.
+
+-Non-Functional (can be added as extensions):
+
+Thread safety
+
+Persistence
+
+Retry on failure
+
+Delivery guarantees (at-most-once / at-least-once)
+
+Solution
+
+--High-Level Design
+
+We’ll use:
+
+A Map<String, List<Subscriber>> to store subscribers for each topic.
+
+A Map<String, Queue<String>> for messages per topic (FIFO queue).
+
+A worker thread per subscriber or topic that processes messages.

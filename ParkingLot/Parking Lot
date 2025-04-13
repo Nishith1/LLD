@@ -1,0 +1,112 @@
+🚧 Problem Statement
+Design a parking lot system that supports:
+
+Different vehicle types (Car, Bike, Truck, etc.)
+
+Parking spot types (Compact, Large, etc.)
+
+Entry & exit gates
+
+Ticket generation
+
+Fee calculation (optional for base design)
+
+
+
+🧱 Core Components
+1. Entities
+Vehicle
+
+ParkingSpot
+
+ParkingFloor
+
+ParkingLot
+
+EntryGate / ExitGate
+
+Ticket
+
+Payment (optional)
+
+
+🔄 Workflow
+Vehicle arrives at EntryGate
+
+System allocates a parking spot
+
+Issues a ticket
+
+On exit, spot is freed and payment is made (if required)
+
+
+🧩 Class Diagram (High-Level)
+
+          +--------------------+
+          |     Vehicle        |
+          +--------------------+
+          | - licensePlate     |
+          | - vehicleType      |
+          +--------------------+
+
+          +--------------------+
+          |   ParkingSpot      |
+          +--------------------+
+          | - id               |
+          | - type             |
+          | - isAvailable      |
+          | - vehicle          |
+          +--------------------+
+
+          +--------------------+
+          |   ParkingFloor     |
+          +--------------------+
+          | - floorNumber      |
+          | - spots: List<>    |
+          +--------------------+
+
+          +--------------------+
+          |    ParkingLot      |
+          +--------------------+
+          | - floors           |
+          | - entryGates       |
+          | - exitGates        |
+          +--------------------+
+
+          +--------------------+
+          |      Ticket        |
+          +--------------------+
+          | - ticketId         |
+          | - spot             |
+          | - entryTime        |
+          | - vehicle          |
+          +--------------------+
+
+          +--------------------+
+          |    Gate (abstract) |
+          +--------------------+
+          | - gateId           |
+          +--------------------+
+
+     /--> EntryGate    ExitGate <---\
+
+
+🧠 What You Can Add Later
+     Payment Service
+
+     Ticket expiration and fee calc
+
+     Multi-level floors
+
+     Concurrency and thread safety
+
+     Design patterns: Factory (Spot Allocator), Strategy (Fee Calc), Observer (for notifications)
+
+
+
+
+
+
+
+
+

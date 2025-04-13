@@ -1,0 +1,52 @@
+🪣 What is Token Bucket?
+A bucket holds tokens, and:
+
+Each token allows 1 request
+
+Tokens are added at a fixed rate
+
+Requests consume tokens
+
+If not enough tokens → request is rejected
+
+Unlike leaky bucket, bursts are allowed if tokens are available.
+
+
+
+💡 Real-world analogy:
+Imagine:
+
+You get 10 tokens per second
+
+Your bucket can hold 50 tokens max
+
+You can save up tokens if unused, then burst later
+
+This is what makes Token Bucket burst-tolerant, unlike Fixed Window or Sliding Counter.
+
+
+
+🧠 Components of the Design
+capacity: max number of tokens in bucket
+
+refillRate: tokens added per second
+
+lastRefillTimestamp: last time tokens were added
+
+tokens: current available tokens
+
+
+🎯 Why Token Bucket is 🔥 in Interviews
+Feature	Token Bucket
+Burst-friendly	✅ Yes
+Throttle long-term load	✅ Yes
+Memory-efficient	✅ Only stores 1 number per user
+Real-world application	✅ API gateways, Nginx, Google Cloud, AWS
+
+
+
+
+
+
+
+

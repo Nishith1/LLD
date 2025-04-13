@@ -1,0 +1,42 @@
+What is Sliding Window Counter?
+Think of it as a compromise between:
+
+Fixed window (simple, fast, but inaccurate)
+
+Sliding window log (accurate, but memory-heavy)
+
+
+💡 Key Idea:
+Break your time window (e.g., 60 seconds) into smaller fixed intervals (e.g., 6 intervals of 10 seconds each), and count requests in each interval.
+
+When a request arrives:
+
+Remove counts from expired intervals
+
+Sum requests in relevant intervals
+
+If total < max limit → allow, else → block
+
+
+🧠 Real-World Analogy
+It's like having a rolling histogram of how many requests happened in the last 60 seconds. You’re always summing the last N intervals.
+
+
+🔍 Benefits
+Feature	Sliding Window Counter
+Memory	✅ Lower than logs
+Accuracy	✅ Better than fixed window
+Implementation	✅ Intermediate complexity
+Production-ready	✅ Yes
+
+ Recap
+Best of both worlds: balances accuracy + performance.
+
+Great talking point in interviews when discussing scalability.
+
+You can scale it across shards/partitions for distributed systems.
+
+
+
+
+
